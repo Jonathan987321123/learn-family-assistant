@@ -1,0 +1,18 @@
+name = "learn-api"
+main = "src/worker.js"
+compatibility_date = "2026-06-01"
+workers_dev = true
+
+routes = [
+  { pattern = "learn.obsync.xyz", zone_name = "obsync.xyz" },
+  { pattern = "learn.obsync.xyz/*", zone_name = "obsync.xyz" },
+]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "learn-questions"
+database_id = "25b6da8a-9ab3-4434-89f7-478e9055f7e5"
+
+[vars]
+LOG_LEVEL = "info"
+APP_NAME = "learn-helper"
